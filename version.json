@@ -1,5 +1,5 @@
 {
     "version": "1.1",
     "url": "https://gumroad.com/products/qdtehc/",
-    "patch_notes": "🛠️ <b>PERFORMANCE & BUG FIXES:</b><br>• Drastically reduced startup time (Lazy Loading).<br>• Fixed a bug where external microphones were not detected.<br>• Full i18n Translation Support added to system windows and patch notes.<br>• Improved stability of the background TTS engine."
+    "patch_notes": "🚀 <b>NEW FEATURES & IMPROVEMENTS:</b><br>• <b>Global Voice Expansion:</b> Added 5 new AI TTS languages (Chinese, Italian, Portuguese, Russian, Korean).<br>• <b>Smart Auto-Scan:</b> AI now intelligently mutes itself during auto-scans if your 3D model hasn't visually changed, preventing voice spam.<br><br>🛠️ <b>PERFORMANCE & BUG FIXES:</b><br>• <b>Microphone Engine Rewrite:</b> Fixed a critical Windows API bug causing duplicated 'ghost' microphones and broken regional characters.<br>• <b>Performance Leap:</b> Drastically reduced application startup time (implemented Lazy Loading for heavy ML models).<br>• <b>UI Polish:</b> Fixed real-time language switching for dynamic UI elements and clipboard toasts.<br>• Improved overall stability of the background TTS audio engine."
 }
