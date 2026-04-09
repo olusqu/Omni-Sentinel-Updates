@@ -1,29 +1,5 @@
 {
-"version": "1.1",
-"url": "https://gumroad.com/products/qdtehc/",
-"patch_notes": "🔧 VERSION 1.1 STABILIZATION UPDATE
-This release focuses on critical bug fixes, crash resolutions, and system hardening to deliver a stable, production-ready experience.
-
-🐛 CRITICAL BUG FIXES:
-• Grayscale Filter Recovery: Fixed the broken grayscale filter (AttributeError) that prevented image filters from applying correctly via the context menu.
-• Periodic Cleanup Crash: Resolved critical memory management crashes in the TTS audio pipeline and temporary file cleanup systems that caused random application termination.
-• Drawing Engine Stability: Fixed PyQt6 macro description errors in the undo system and corrected signal-slot connections preventing brush/canvas crashes.
-• Skill Tree Synchronization: Corrected the Analytical Skill Tree update logic - skill progress bars (Gesture, Proportion, Anatomy, Planes, Detail) now properly update based on AI analysis feedback.
-
-🎨 UI/UX IMPROVEMENTS:
-• Challenge Layout Fix: Resolved text cut-off issues in the 30-Day Challenge calendar interface for better task readability.
-• HUD Controls: Added dedicated checkboxes and UI visibility toggles for Pomodoro and Timelapse floating HUDs.
-• Checkbox-Overpaint Link: Restored the broken connection between the 'Drawing Protocol' checkbox and the overpaint HUD system.
-
-🤖 AI & MODELS:
-• Expanded OpenAI Support: Added support for latest OpenAI model lineup including GPT-5 series, GPT-4.1 variants, and o4-mini reasoning models.
-
-🌍 LOCALIZATION & TRANSLATIONS:
-• Complete Translation Keys: Added all missing translation keys for auto-generated UI elements, error messages, and system notifications.
-• Language Completion: Filled lacking translation files for Polish, Chinese, Italian, Portuguese, Russian, Korean, and remaining supported languages.
-
-⚙️ SYSTEM & MAINTENANCE:
-• Updated Web Sources: Refreshed AI Radar scraping lists - removed dead domains (CGSociety, legacy Polycount) and added 2026-verified sources (Pixiv, Cara.app, Lemanoosh, GrabCAD, etc.).
-• Repository Cleanup: Implemented proper .gitignore rules for large ML models (MediaPipe, Rembg, ONNX) to prevent repository bloat."
+    "version": "1.1",
+    "url": "https://gumroad.com/products/qdtehc/",
+    "patch_notes": "🔧 VERSION 1.1 STABILIZATION UPDATE\nThis release focuses on critical bug fixes, crash resolutions, and system hardening to deliver a stable, production-ready experience.\n\n🐛 CRITICAL BUG FIXES:\n• Grayscale Filter Recovery: Fixed the broken grayscale filter (AttributeError) that prevented image filters from applying correctly via the context menu.\n• Periodic Cleanup Crash: Resolved critical memory management crashes in the TTS audio pipeline and temporary file cleanup systems that caused random application termination.\n• Drawing Engine Stability: Fixed PyQt6 macro description errors in the undo system and corrected signal-slot connections preventing brush/canvas crashes.\n• Skill Tree Synchronization: Corrected the Analytical Skill Tree update logic - skill progress bars (Gesture, Proportion, Anatomy, Planes, Detail) now properly update based on AI analysis feedback.\n\n🎨 UI/UX IMPROVEMENTS:\n• Challenge Layout Fix: Resolved text cut-off issues in the 30-Day Challenge calendar interface for better task readability.\n• HUD Controls: Added dedicated checkboxes and UI visibility toggles for Pomodoro and Timelapse floating HUDs.\n• Checkbox-Overpaint Link: Restored the broken connection between the 'Drawing Protocol' checkbox and the overpaint HUD system.\n\n🤖 AI & MODELS:\n• Expanded OpenAI Support: Added support for latest OpenAI model lineup including GPT-5 series, GPT-4.1 variants, and o4-mini reasoning models.\n\n🌍 LOCALIZATION & TRANSLATIONS:\n• Complete Translation Keys: Added all missing translation keys for auto-generated UI elements, error messages, and system notifications.\n• Language Completion: Filled lacking translation files for Polish, Chinese, Italian, Portuguese, Russian, Korean, and remaining supported languages.\n\n⚙️ SYSTEM & MAINTENANCE:\n• Updated Web Sources: Refreshed AI Radar scraping lists - removed dead domains (CGSociety, legacy Polycount) and added 2026-verified sources (Pixiv, Cara.app, Lemanoosh, GrabCAD, etc.).\n• Repository Cleanup: Implemented proper .gitignore rules for large ML models (MediaPipe, Rembg, ONNX) to prevent repository bloat."
 }
-
