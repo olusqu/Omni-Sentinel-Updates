@@ -1,5 +1,29 @@
 {
-    "version": "1.1",
-    "url": "https://gumroad.com/products/qdtehc/",
-    "patch_notes": "🚀 <b>MAJOR NEW FEATURES & EXPANSION:</b><br>• <b>30-Day Sculpting Challenge:</b> A new daily progression system. Choose session goals (Anatomy, Portrait, Creature, etc.) or input custom tasks. The calendar visually tracks consistency (Blue = Active Today, Green = Completed).<br>• <b>Analytical Skill Tree:</b> AI now tracks your growth in 5 core categories: Gesture, Proportion, Anatomy, Planes, and Detail. The tree updates dynamically based on AI visual analysis.<br>• <b>Omni-Voice Control:</b> Advanced hands-free control. Trigger actions by saying: <i>'Sentinel...', 'Computer...', or 'System...'</i>.<br>  - <b>Search:</b> <i>'Search for...'</i> – automatically launches AI Radar on the Ref Board.<br>  - <b>Analysis:</b> <i>'Analyze this'</i> or <i>'Check screen'</i> – forces an immediate scan.<br>  - <b>Tools:</b> <i>'Clear board'</i> (removes drawings), <i>'Open report'</i> (shows Ref Board), <i>'Start Pomodoro'</i>.<br>  - <b>Safety:</b> <i>'Stop'</i> or <i>'Silence'</i> – immediately kills TTS audio and clears the screen overlays.<br>• <b>Artistic Brush Engine:</b> Added professional brush size control for overpaints. Use <b>[</b> and <b>]</b> keys to adjust thickness in real-time.<br><br>🌐 <b>REF BOARD & CONNECTIVITY:</b><br>• <b>Pinterest & Web Drag-Drop:</b> Direct integration with web browsers. Drag any image from Pinterest or Google directly onto the board. Sentinel now handles background networking to fetch high-res source files automatically.<br>• <b>Smart Clipboard 2.0:</b> Rewritten clipboard handling. Support for copying images, HTML fragments, and direct URLs. AI now auto-detects if the clipboard contains a link and offers to download it.<br>• <b>View-Centric Spawning:</b> New images now intelligently spawn in the center of your current viewport, preventing 'lost' images on large boards.<br>• <b>Liquid Glass Overlay:</b> New reactive UI blur effect that triggers when dragging files over the board, providing clear visual feedback for drop zones.<br><br>⚙️ <b>WORKFLOW & INTERFACE:</b><br>• <b>Alt + Drag Panning:</b> Window movement is now bound to Alt + Left Mouse Button, freeing up the LMB for precise selection and drawing operations.<br>• <b>Visual Monitor OSD:</b> New large On-Screen Display indicator to show which monitor is currently being analyzed.<br>• <b>Global Voice Expansion:</b> Added 10+ new AI TTS languages (Polish, Chinese, Italian, Portuguese, Russian, Korean, etc.) with full localized UI support.<br><br>🛠️ <b>PERFORMANCE & BUG FIXES:</b><br>• <b>Asynchronous Signal Bridge:</b> Fixed a critical 'Cross-Thread' crash when adding network images to the UI. Implemented a robust Signal-Slot architecture for thread-safe board updates.<br>• <b>Undo Macro Fix:</b> Resolved a PyQt6 TypeError where clearing drawings would crash the application due to missing macro descriptions.<br>• <b>Deep Session Recovery:</b> Fixed 'save_dir' attribute errors and improved the logic for prompting session restoration on startup.<br>• <b>Lazy Loading:</b> Startup time drastically improved by loading heavy ML models (MediaPipe/Rembg) only when first used."
+"version": "1.1",
+"url": "https://gumroad.com/products/qdtehc/",
+"patch_notes": "🔧 VERSION 1.1 STABILIZATION UPDATE
+This release focuses on critical bug fixes, crash resolutions, and system hardening to deliver a stable, production-ready experience.
+
+🐛 CRITICAL BUG FIXES:
+• Grayscale Filter Recovery: Fixed the broken grayscale filter (AttributeError) that prevented image filters from applying correctly via the context menu.
+• Periodic Cleanup Crash: Resolved critical memory management crashes in the TTS audio pipeline and temporary file cleanup systems that caused random application termination.
+• Drawing Engine Stability: Fixed PyQt6 macro description errors in the undo system and corrected signal-slot connections preventing brush/canvas crashes.
+• Skill Tree Synchronization: Corrected the Analytical Skill Tree update logic - skill progress bars (Gesture, Proportion, Anatomy, Planes, Detail) now properly update based on AI analysis feedback.
+
+🎨 UI/UX IMPROVEMENTS:
+• Challenge Layout Fix: Resolved text cut-off issues in the 30-Day Challenge calendar interface for better task readability.
+• HUD Controls: Added dedicated checkboxes and UI visibility toggles for Pomodoro and Timelapse floating HUDs.
+• Checkbox-Overpaint Link: Restored the broken connection between the 'Drawing Protocol' checkbox and the overpaint HUD system.
+
+🤖 AI & MODELS:
+• Expanded OpenAI Support: Added support for latest OpenAI model lineup including GPT-5 series, GPT-4.1 variants, and o4-mini reasoning models.
+
+🌍 LOCALIZATION & TRANSLATIONS:
+• Complete Translation Keys: Added all missing translation keys for auto-generated UI elements, error messages, and system notifications.
+• Language Completion: Filled lacking translation files for Polish, Chinese, Italian, Portuguese, Russian, Korean, and remaining supported languages.
+
+⚙️ SYSTEM & MAINTENANCE:
+• Updated Web Sources: Refreshed AI Radar scraping lists - removed dead domains (CGSociety, legacy Polycount) and added 2026-verified sources (Pixiv, Cara.app, Lemanoosh, GrabCAD, etc.).
+• Repository Cleanup: Implemented proper .gitignore rules for large ML models (MediaPipe, Rembg, ONNX) to prevent repository bloat."
 }
+
